@@ -1,8 +1,18 @@
 body{
     background-color: darkcyan;
 }
+.caveat-top-heading {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: normal;
+    border-bottom: 15px solid ;
+    text-align: center;
+    
+  }
 .top-container{
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 .head-container{
 
@@ -12,38 +22,99 @@ body{
     flex-direction: column;
     margin-top: 20px;
      align-items: center;
-     
+     overflow-x: auto;
 }
 .key-container{
     display: flex;
     flex-direction: row;
      align-content: center; 
-     flex-wrap: wrap;
+     flex-wrap: nowrap;
+     gap: 5px;
+     margin-top: 3px;
 }
 
 
-.caveat-top-heading {
-  font-family: "Caveat", serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-size: 5rem;
-  font-style: normal;
-  border-bottom: 15px solid ;
-  
-  text-align: center;
-  
-}
+
 .key{
     display: inline-block;
     width:50px;
     height: 50px;
-    font-size: 12px;
+    font-size: 1rem;
     border: 2px solid lightgray;
     border-radius: 5px;
     padding: 10px 10px;
-    margin: 0px 1px;
+    /* margin: 0px 1px; */
     background-color: aliceblue;
     text-align: center;
     align-content: center;
     align-items: center;
+}
+.big-key{
+    width:130px;
+}
+.mid-key{
+    width:90px;
+}
+.enter-key{
+    width:140px;
+}
+.caps-key{
+    width:120px;
+}
+.space-key{
+    width:365px;
+}
+.pressed{
+    background-color: black;
+    color: white;
+    border-color: red;
+}
+.glow{
+    display: inline-block;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h1{
+    padding: 0px 0px;
+    margin: 2px 0px;
+}
+p{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+@media (max-width:500px){
+    .key{
+       
+        width:30px;
+        height: 30px;
+        font-size: 0.5rem;
+        border: 1px solid lightgray;
+        border-radius: 1px;
+        padding: 5px 5px;
+    }
+    .big-key{
+        width:65px;
+    }
+    .mid-key{
+        width:45px;
+    }
+    .enter-key{
+        width:70px;
+    }
+    .caps-key{
+        width:60px;
+    }
+    .space-key{
+        width:180px;
+    }
 }
