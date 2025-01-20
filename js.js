@@ -175,4 +175,8 @@ function playSound() {
 function keyDisplay(key) {
         document.querySelector(".keypressed").innerHTML=key;
         document.querySelector(".keypressed").classList.add("glow");
+        setTimeout(function(){
+            document.querySelector(".keypressed").innerHTML="";
+        document.querySelector(".keypressed").classList.remove("glow");
+        },300);
 }
